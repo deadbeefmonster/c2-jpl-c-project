@@ -3,8 +3,9 @@ project(azalyx C)
 
 set(CMAKE_C_STANDARD 11)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra")
+add_compile_options(-Wall -Wextra -pedantic)
 
 add_executable(azalyx
-	src/main.c
-	)
+		src/main.c
+		src/main.h
+)
